@@ -1,13 +1,8 @@
-﻿<%@ Page Language="VB" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="form.aspx.cs" Inherits="form" %>
 
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta charset="utf-8" />
-    <title></title>    
-</head>
-<body>
-    <form id="form1" runat="server">   
-    </form>
-</body>
-</html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+ido
+</asp:Content>
+
