@@ -7,8 +7,15 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+    img.menu {
+    width:150px;
+    height:50px
+    }
+    </style>
 </head>
 <body>
+
     <h1 style="font-family: Arial, sans-serif; text-align:center; margin-top:40px;">
     <span style="font-weight:300;">IDO'S,</span> 
     <span style="font-weight:700;">website</span>
@@ -16,9 +23,17 @@
     <table>
 
   <tr>
-    <th><a href="https://example.com">Click here</a></th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>
+        <a href="form.aspx">form.aspx</a>
+        <a href="login.aspx"><img class="menu" src="images/login.svg"/></a>
+        <a href="register.aspx">
+            <img class="menu" src="images/register.svg"/></a>
+        <a href="Gallery.aspx"><img class="menu" src="images/register.svg"/></a>
+
+
+    </th>
+    <th></th>
+    <th></th>
   </tr>
 
   <tr>
@@ -32,7 +47,7 @@
     <td></td>
   </tr>
 </table>
-    <h1>start</h1>
+  
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
@@ -40,6 +55,6 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-    <h1>end</h1>
+
 </body>
 </html>
