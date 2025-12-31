@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+    <h1>form</h1>
     <form name="example" method="get" action="html_page13.html">
     :שם פרטי <input type="text" name="firstname">
     :שם משפחה <input type="text" name="lastname">
