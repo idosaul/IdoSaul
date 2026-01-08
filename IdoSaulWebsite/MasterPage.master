@@ -28,7 +28,7 @@
         <a href="login.aspx"><img class="menu" src="images/login.svg"/></a>
         <a href="register.aspx">
             <img class="menu" src="images/register.svg"/></a>
-        <a href="Gallery.aspx"><img class="menu" src="images/register.svg"/></a>
+        <a href="Gallery.aspx"><img class="menu" src="images/Gallery.svg"/></a>
 
 
     </th>
