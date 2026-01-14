@@ -90,10 +90,7 @@
     <!-- תפריט עם אייקונים -->
     <div class="menu-wrapper">
 
-        <a href="form.aspx" class="menu-item">
-            <img class="menu" src="images/form.svg" />
-            <span>Form</span>
-        </a>
+       
 
         <a href="login.aspx" class="menu-item">
             <img class="menu" src="images/login.svg" />
@@ -113,12 +110,10 @@
     </div>
 
     <!-- תוכן מתחלף -->
-    <form id="form1" runat="server">
         <div class="content-box">
             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-    </form>
 
 </body>
 </html>
