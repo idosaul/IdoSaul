@@ -68,6 +68,7 @@
                 </tr>
               </table>
             </form>
+        <%=stResult %>
 
     </div>
 </asp:Content>

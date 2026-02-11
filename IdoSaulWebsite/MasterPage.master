@@ -90,7 +90,7 @@
     <!-- תפריט עם אייקונים -->
     <div class="menu-wrapper">
 
-       
+        
 
         <a href="login.aspx" class="menu-item">
             <img class="menu" src="images/login.svg" />
@@ -102,6 +102,11 @@
             <span>Register</span>
         </a>
 
+
+        <a href="Basketball.aspx" class="menu-item">
+        <img class =" menu" scr="images/basketballTeams.jpg" />
+        <span>Basketball</span>
+            </a>
         <a href="Gallery.aspx" class="menu-item">
             <img class="menu" src="images/Gallery.svg" />
             <span>Gallery</span>
