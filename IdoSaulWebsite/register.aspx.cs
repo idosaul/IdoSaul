@@ -24,18 +24,20 @@ public partial class register : System.Web.UI.Page
 
 
 
-            /*
-            //האם המשתמש קיים?
-            //לפי אימייל
-            //אם לא קיים
-            //עושים ISERTR
-            //ובמקום לכתוב נרשמת בהצלחה
-            //Response.Redirect("login.aspx");
-            //אם קיים
-            //stResult="המשתמש קיים"
-            */
+            // בדיקה אם האימייל קיים
+            string sqlCheck =
+                "SELECT * FROM tUsers WHERE Email = N'" + email + "'";
 
-            string sqlInsert =
+            bool exists = MyAdoHelper.IsExist(sqlCheck);
+
+            if (exists)
+            {
+                stResult = "מייל שהוכנס קיים במערכת, הכנס אימייל חדש";
+            }
+            else
+            {
+
+                string sqlInsert =
                     "INSERT INTO tUsers " +
                     "VALUES (" +
                     "N'" + first_name + "'," +     // <--- N לפני המחרוזת
@@ -48,9 +50,11 @@ public partial class register : System.Web.UI.Page
 
                     ")";
 
-            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+                MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-            stResult = "נרשמת בהצלחה!";
+                stResult = "נרשמת בהצלחה!";
+            }
+            Response.Redirect("home.aspx");
         }
     }
 }
