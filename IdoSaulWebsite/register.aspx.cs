@@ -26,7 +26,7 @@ public partial class register : System.Web.UI.Page
 
             // בדיקה אם האימייל קיים
             string sqlCheck =
-                "SELECT * FROM tUsers WHERE Email = N'" + email + "'";
+                "SELECT * FROM tUsers WHERE gmail = N'" + email + "'";
 
             bool exists = MyAdoHelper.IsExist(sqlCheck);
 
