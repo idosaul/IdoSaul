@@ -17,7 +17,7 @@ public partial class login : System.Web.UI.Page
 
             if (email == "cool@email.com" && password == "adminpower")
             {
-                Response.Redirect("Admin.aspx");
+                Response.Redirect("admin.aspx");
             }
             else
             {
