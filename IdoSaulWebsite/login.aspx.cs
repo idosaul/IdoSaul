@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,9 +29,9 @@ public partial class login : System.Web.UI.Page
                     "WHERE gmail = N'" + email + "' " +
                     "AND password = N'" + password + "'";
 
-                bool userExists = MyAdoHelper.IsExist(sqlSelect);
+                DataTable dt = MyAdoHelper.ExecuteDataTable(sqlSelect);
 
-                if (!userExists)
+                if (dt.Rows.Count == 0)
                     stResult = "אימייל או סיסמה שגויים";
                 else
                     Response.Redirect("home.aspx");
