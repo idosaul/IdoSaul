@@ -18,6 +18,8 @@ public partial class login : System.Web.UI.Page
 
             if (email == "cool@email.com" && password == "adminpower")
             {
+                Session["username"] = "Manager";
+                Session["nihul"] = "ok";
                 Response.Redirect("admin.aspx");
             }
             else
@@ -34,7 +36,11 @@ public partial class login : System.Web.UI.Page
                 if (dt.Rows.Count == 0)
                     stResult = "אימייל או סיסמה שגויים";
                 else
+                {
+                    Session["username"] = dt.Rows[0]["firstname"];
+                    Session["user"] = "ok";
                     Response.Redirect("home.aspx");
+                }
             }
         }
     }

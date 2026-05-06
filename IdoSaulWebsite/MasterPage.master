@@ -81,6 +81,8 @@
 
 <body>
 
+    שלום <%=Session["username"] %>
+
     <!-- כותרת -->
     <h1>
         <span style="font-weight:300;">IDO'S,</span>
@@ -90,7 +92,7 @@
     <!-- תפריט עם אייקונים -->
     <div class="menu-wrapper">
 
-        
+        <a href="Logout.aspx">Logout.aspx</a>
 
         <a href="login.aspx" class="menu-item">
             <img class="menu" src="images/login.svg" />
